@@ -9,14 +9,14 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="NavbarItems">
-        <img src="../public/vite.svg" className="logo" alt="vite" />
-        <div className="menu-icons" onClick={this.handleClick}>
+      <nav className='NavbarItems'>
+        <img src='./ssglogo.png' className='logo' alt='logo' />
+        <div className='menu-icons' onClick={this.handleClick}>
           <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+            className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}
           ></i>
         </div>
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuData.map((item, index) => {
             return (
               <li key={index}>
